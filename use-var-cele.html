@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Custom property</title>
+
+    <style>
+        :root {
+            --main-color: red;
+            --side-width: 30%;
+
+
+        }
+
+        h1,
+        h2 {
+            color: var(--main-color);
+        }
+
+        p {
+            color: var(--main-color);
+        }
+
+        small {
+            color: var(--main-color);
+        }
+
+        footer {
+            color: var(--main-color);
+            clear: both;
+
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(238, 204, 130);
+        }
+
+        .side-nav,
+        .blogs {
+            float: left;
+            height: 500px;
+        }
+
+        aside {
+            background-color: plum;
+            width: var(--side-width);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blogs {
+            background-color: salmon;
+            width: calc(100% - var(--side-width));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>I am exporing custom Properties </h1>
+        <p>welome to my website</p>
+
+        <main>
+            <h2>my awesome content</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni culpa dicta enim quaerat minima optio vel
+                reiciendis. Repellendus optio animi fugiat doloribus dolor odio id. Esse numquam est id totam.</p>
+
+            <section>
+                <aside class="side-nav">
+                    my site navigation
+                </aside>
+                <div class="blogs">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil recusandae mollitia ducimus
+                        natus nam doloribus omnis debitis maiores, praesentium ab officia soluta quidem repellendus eos
+                        provident aperiam impedit vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Architecto autem aliquam, possimus suscipit quam saepe facere omnis eaque a asperiores rerum
+                        quos nostrum esse consectetur enim assumenda ab optio blanditiis?lorem500</p>
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer>
+            <small>copy-right</small>
+        </footer>
+</body>
+
+</html>
